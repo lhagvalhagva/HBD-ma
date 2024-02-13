@@ -1071,16 +1071,29 @@ audio {
   }
 }
 
+// .balloons {
+//   position: fixed;
+//   bottom: -200px;
+//   opacity: 0.6;
+//   z-index: 99;
+//   width: 100px;
+//   height: 183px;
+//   background-repeat: no-repeat no-repeat;
+//   background-size: 100px 183px;
+// }
+
 .balloons {
   position: fixed;
-  bottom: -200px;
+  bottom: -10vh; /* Adjust as needed for the desired position from the bottom */
   opacity: 0.6;
   z-index: 99;
-  width: 100px;
-  height: 183px;
+  width: 10vw; /* Adjust as needed for the desired width */
+  height: 30vh;
+  max-width: 100rem;
   background-repeat: no-repeat no-repeat;
-  background-size: 100px 183px;
+  background-size: cover;
 }
+
 .balloons h2 {
   text-transform: uppercase;
   font-family: "Signika", sans-serif;
@@ -1089,37 +1102,94 @@ audio {
   text-shadow: 5px 5px 5px #fff;
   display: none;
 }
+.spacer {
+  height: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .balloons h2 {
+    font-size: 30px;
+    display: block;
+  }
+
+  .balloons {
+    position: fixed;
+    bottom: -40vh;
+    opacity: 0.6;
+    z-index: 99;
+    width: 100vw;
+    height: 15vh;
+    padding: 0;
+    max-width: 60px;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+  }
+
+  .balloons-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+  }
+
+  #b11,
+  #b22,
+  #b33,
+  #b44,
+  #b55,
+  #b66,
+  #b77,
+  #b88 {
+    display: none;
+  }
+}
+
 #b1,
 #b11 {
   background-image: url("b1.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b2,
 #b22 {
   background-image: url("b2.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b3,
 #b33 {
   background-image: url("b3.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b4,
 #b44 {
   background-image: url("b4.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b5,
 #b55 {
   background-image: url("b5.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b6,
 #b66 {
   background-image: url("b6.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b7,
 #b77 {
   background-image: url("b7.png");
+  padding: 0px;
+  margin: 0px;
 }
 #b8,
 #b88 {
   background-image: url("b7.png");
+  padding: 0px;
+  margin: 0px;
 }
 .balloons-rotate-behaviour-one {
   -webkit-animation: balloons_rotate_one linear 10s infinite;
